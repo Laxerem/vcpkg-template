@@ -1,0 +1,20 @@
+[cmake]
+version = "3.15"
+cmkr-include = "cmake/cmkr.cmake"
+
+[project]
+name = "vcpkg_template"
+
+[vcpkg]
+version = "2024.03.19" # версия vcpkg
+packages = ["fmt"]
+
+# Версионирование зависимостей
+[find-package]
+fmt = { version = "*" }
+
+# Название собранного исполняемого файла
+[target.app]
+type = "executable"
+sources = ["src/main.cpp"]
+link-libraries = ["fmt::fmt"] # назвние зависимостей и их namespace
