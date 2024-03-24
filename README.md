@@ -27,3 +27,6 @@ make
 3. Указать версию в `find-package` (либо `*` если любая версия подойдёт`)
 4. Добавить имя зависимости в `target.app.link-libraries`
 
+
+--------
+Позаимствовано: https://github.com/build-cpp/vcpkg_template
